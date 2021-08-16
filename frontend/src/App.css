@@ -1,0 +1,112 @@
+body {
+    background-image: url(https://static.posters.cz/image/1300/posters/harry-potter-colegio-hogwarts-de-magia-y-hechiceria-i104622.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.material-icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.Slytherin{
+    background: linear-gradient(135deg, rgba(30,124,44,1) 1%, rgba(130,232,94,1) 100%);
+}
+.Gryffindor{
+    background: linear-gradient(135deg, rgba(255,5,3,1) 1%, rgba(254,210,129,1) 100%);
+}
+.Hufflepuff{
+    background: linear-gradient(135deg, rgba(255,200,3,1) 1%, rgba(255,248,180,1) 100%);
+}
+.Ravenclaw{
+    background: linear-gradient(135deg, rgba(8,152,185,1) 1%, rgba(101,208,254,1) 100%);
+}
+.transparent-buttons{
+    text-align: center;
+
+}
+.transparent-btn {
+    padding: 10px 54px;
+    color: #fff;
+    font-size: 20px;
+    z-index: 1;
+    position: relative;
+    border: 5px solid rgba(107,99,181,1);
+    background-color: rgba(0, 8, 58, 0.4)
+}
+.transparent-btn:before {
+    background: none repeat scroll 0 0 black;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.image-logo {
+    filter: brightness(0) invert(1);
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.finado{
+    background-color: #cccccc;
+}
+.redondeado{
+    border-radius: 15px;
+}
+.half-redondeado{
+    border-radius: 15px 0px 0px 15px;
+}
+
+.transp{
+    background: transparent;
+    border: transparent;
+}
+@media (pointer: fine) {
+    .btn-group {
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        margin-left: 60%;
+        margin-right: 20%;
+        z-index:1000;
+    }
+
+    .char-foto{
+        width: 10vw;
+        height: 250px;
+        object-fit: cover;
+        clip-path: circle(100px at 50% 40%);
+        margin-top: 25%;
+    }
+}
+
+@media (pointer:coarse) {
+    .btn-group {
+        position:fixed;
+        bottom:0;
+        left:0;
+        right:0;
+        margin-left: 25px;
+        margin-right: 25px;
+        display:flex;
+        z-index:1000;
+    }
+
+    .char-foto{
+        height: 200px;
+        object-fit: cover;
+        margin-left: 35%;
+        margin-right: 50%;
+        clip-path: circle(60px at 50% 40%);
+    }
+}
+.flexible {
+    flex-grow: 1;
+}
